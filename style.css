@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(21, 0, 33);
+    background-color: rgb(183, 89, 237);
     user-select: none;
     font-size: 40px;
     font-family: 'Trebuchet MS';
@@ -18,19 +18,27 @@ body{
     /* grid-template-columns: auto auto auto auto; */
     align-items: center;
     gap:10px;
+    transition: ease-in-out 500ms;
+    box-shadow: 7px 7px #555;
 }
+
+#calculator:hover{
+    transform: translateY(-5px);
+    box-shadow: 12px 12px #777;
+}
+
 
 input{
     grid-column-start: 1;
     grid-column-end: 5;
-    background-color: rgb(21, 0, 33);
-    color: white;
+    background-color: rgba(255, 255, 255, 0.396);
     padding: 4%;
-    text-decoration: dashed;
+    border-radius: 5px;
     /* caret-color: transparent; */
     font-size: 60px;
     font-family: 'Trebuchet MS';
     text-align: right;
+    border: none;
     box-shadow: 6px 4px rgb(79, 79, 79);
 }
 
